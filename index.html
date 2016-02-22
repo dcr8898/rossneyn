@@ -17,6 +17,19 @@
   <a href='https://linkedin.com/in/damianrossney' title='LinkedIn'><span class='fa fa-2x fa-linkedin-square'></span></a>
   <a href='dl/dcr_res.pdf' download='Damian C. Rossney Resume.pdf' title='Download Resume'><span class='fa fa-2x fa-file-pdf-o'></span></a>
 </header>
-<div class="container"><canvas id="canvas" width="600" height="600"></div>
+<div class="container">
+  Fun with fractals: the Dragon Curve<br/>
+  (see the source code at <a href="https://github.com/dcr8898/dragon">https://github.com/dcr8898/dragon</a>)
+  <canvas id="canvas" width="600" height="600"></canvas>
+  <form id="controls">
+    <label for="dragon1color">Dragon 1 Color: <input type="color" name="dragon1color" value="#FF69B4"></label><br/>
+    <label for="dragon2color">Dragon 2 Color: <input type="color" name="dragon2color" value="#800080"></label><br/>
+    <label for="dragon3color">Dragon 3 Color: <input type="color" name="dragon3color" value="#008080"></label><br/>
+    <label for="dragon4color">Dragon 4 Color: <input type="color" name="dragon4color" value="#FF00FF"></label><br/>
+    <label for="timeout">Timeout (ms):</label>
+    <input type="range" name="timeout" min="0" value="50">
+  </form>
+
+</div>
 </body>
 </html>
