@@ -195,9 +195,29 @@ header span.fa {
 
 .container {
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1em;
+}
+
+#canvas,
+#controls {
+  border: 1px solid black;
+  background-color: black;
 }
 
 #canvas {
-  border: 1px solid black;
-  background-color: black;
+  float: left;
+}
+
+#controls {
+  width: 300px;
+  height: 600px;
+  float: right;
+  margin-top: -29px;
+  text-align: left;
+}
+
+input[type="number"] {
+   width: 45px;
 }
