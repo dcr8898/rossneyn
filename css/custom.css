@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------------*/
+/*  MY CUSTOM CSS
+/*-----------------------------------------------------------------------------------*/
+
+/* for equal height columns in row */
+@media only screen and (min-width : 768px) {
+    .is-table-row {
+        display: table;
+    }
+    .is-table-row [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+
+/* for prism code section */
+code[class*="language-"],
+pre[class*="language-"] {
+  font-size: 120%;
+}
+
+
+/* for dragon canvas and controls */
+#canvas {
+  background-color: black;
+}
+
+input[type="number"] {
+  color: #000;
+   width: 65px;
+}

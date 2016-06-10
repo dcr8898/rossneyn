@@ -17,7 +17,7 @@
     var maxDegree = 16;
     var dragonSet = genDragon(maxDegree);
     var startX = 300;
-    var startY = 300;
+    var startY = 250;
     var r = 1;
     var th = 0;
     var step = 1;

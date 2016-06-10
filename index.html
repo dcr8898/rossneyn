@@ -1,42 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <title>Damian C. Rossney :: Developer</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/prism.css" />
-  <script type="text/javascript" src="js/dragon.js"></script>
+	<meta charset="utf-8">
+	<title>Damian::WebDev</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This is the personal website of Damian C. Rossney. Damian is a novice software engineer. Damian is passionate about technology, business, and the intersection of the two. In his spare time, Damian likes to read, spend time with his children, friends, and loved ones, and to continue honing his developer skills.
+	">
+	<meta name="author" content="Damian C. Rossney">
+	<link rel="canonical" href="http://rossney.net/">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+	<!--[if IE]>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+	<![endif]-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/theme.css" rel="stylesheet">
+	<link href="css/colour.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+	<link href="css/prism.css" rel="stylesheet" type="text/css"/>
+	<link href="css/custom.css" rel="stylesheet" type="text/css"/>
+	<!--[if lt IE 9]>
+		<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
+
 <body>
-<header>
-  <h1>Damian C. Rossney</h1>
-  <h3>WEB DEVELOPER</h3>
-  <a href='about.html' title='About Me'><span class='fa fa-2x fa-user-secret'></span></a>
-  <a href='&#109;&#097;&#105;&#108;&#116;&#111;:&#100;&#097;&#109;&#105;&#097;&#110;&#064;&#114;&#111;&#115;&#115;&#110;&#101;&#121;&#046;&#110;&#101;&#116;?&#083;&#117;&#098;&#106;&#101;&#099;&#116;=&#079;&#110;&#108;&#105;&#110;&#101;%&#050;&#048;&#082;&#101;&#115;&#117;&#109;&#101;%&#050;&#048;&#067;&#111;&#110;&#116;&#097;&#099;&#116;' title='Contact Me'><span class='fa fa-2x fa-envelope'></span></a>
-  <a href='https://github.com/dcr8898' title='GitHub'><span class='fa fa-2x fa-github'></span></a>
-  <a href='https://linkedin.com/in/damianrossney' title='LinkedIn'><span class='fa fa-2x fa-linkedin-square'></span></a>
-  <a href='dl/dcr_res.pdf' download='Damian C. Rossney Resume.pdf' title='Download Resume'><span class='fa fa-2x fa-file-pdf-o'></span></a>
-</header>
-<div class="container">
-  Fun with fractals: the Dragon Curve<br/>
-  (see the source code at <a href="https://github.com/dcr8898/dragon">https://github.com/dcr8898/dragon</a>)
-  <canvas id="canvas" width="600" height="600"></canvas>
-  <form id="controls">
-    Dragon 1
-    <label for="dragon1color">Color: <input type="color" name="dragon1color" value="#FF69B4"></label>
-    <label for="dragon1degree">Size: <input type="number" name="dragon1degree" min="2" max="16" value="12"></label><br/>
-    Dragon 2
-    <label for="dragon2color">Color: <input type="color" name="dragon2color" value="#800080"></label>
-    <label for="dragon2degree">Size: <input type="number" name="dragon2degree" min="2" max="16" value="12"></label><br/>
-    Dragon 3
-    <label for="dragon3color">Color: <input type="color" name="dragon3color" value="#008080"></label>
-    <label for="dragon3degree">Size: <input type="number" name="dragon3degree" min="2" max="16" value="12"></label><br/>
-    Dragon 4
-    <label for="dragon4color">Color: <input type="color" name="dragon4color" value="#FF00FF"></label>
-    <label for="dragon4degree">Size: <input type="number" name="dragon4degree" min="2" max="16" value="12"></label><br/>
-    <label for="timeout">Timeout (ms):</label>
-    <input type="range" name="timeout" min="0" value="50">
-  </form>
-</div>
+	<!--header-->
+	<div class="header">
+		<!--menu-->
+		<nav id="main_menu" class="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<!--toggle-->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					<!--logo-->
+					<div class="logo">
+						<a href="index.html"><img src="img/logo.png" alt="" class="animated bounceInDown" /></a>
+					</div>
+				</div>
+
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav pull-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#about-me">About Me</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!--//header-->
+
+	<!--page-->
+		<!-- REVOLUTION SLIDER -->
+		<div class="tp-banner-container">
+			<div class="tp-banner">
+				<ul>
+					<!-- Slide 1 -->
+					<li data-transition="slideright">
+						<img src="img/slider/slider1.jpg" alt="" />
+
+						<!-- Caption -->
+						<div class="tp-caption lfr" data-x="75" data-y="center" data-speed="2400" data-start="800" data-easing="easeOutExpo">
+							<img src="img/slider/dcr-headshot.jpg" class="img-circle" alt="Damian's Headshot" />
+						</div>
+
+						<!-- Caption -->
+						<div class="tp-caption lfb bg rev-text text-center" data-x="550" data-y="center" data-speed="1400" data-start="1800" data-easing="easeOutExpo">
+							<p class="hidden-phone">I'm a <span class="hue">Web Developer</span> in the New York City metro area.<br/>
+							I have a background in business and math, but I'm a<br/>
+							<span class="hue">technologist at heart</span>. I'm interested in opportunities that<br/>
+							will allow me to couple that <span class="hue">passion</span> with my business<br/>
+							acumen. My interests are <span class="hue">crafting beautiful code</span>,<br/>
+							<span class="hue">building practical things</span>, and <span class="hue">growing new businesses</span>.</p>
+						</div>
+
+						<!-- Caption -->
+						<div class="caption sft stl rev-title big" data-x="center" data-y="50" data-speed="1000" data-start="700" data-easing="easeOutExpo">
+							Damian C. Rossney
+						</div>
+
+						<!-- Caption -->
+						<div class="caption lfl stl rev-title-sub" data-x="center" data-y="100" data-speed="800" data-start="1100" data-easing="easeOutExpo">
+							Web Developer
+						</div>
+
+					</li>
+					<!-- END SLIDE 1 -->
+
+					<!-- Slide 2 -->
+					<li data-transition="slideleft">
+						<img src="img/slider/slider2.jpg" alt="" />
+
+						<!-- Caption -->
+						<div class="tp-caption lfr" data-x="75" data-y="center" data-speed="2400" data-start="800" data-easing="easeOutExpo">
+							<canvas id="canvas" width="600" height="500"></canvas>
+						</div>
+
+						<!-- Caption -->
+						<div class="tp-caption lfb bg rev-text hidden-sm hidden-xs" data-x="760" data-y="center" data-speed="1400" data-start="1800" data-easing="easeOutExpo">
+						  <form id="controls">
+						    Dragon 1<br/>
+						    <label for="dragon1color">Color: <input type="color" name="dragon1color" value="#FF69B4"></label>
+						    <label for="dragon1degree">Size: <input type="number" name="dragon1degree" min="2" max="16" value="12"></label><br/>
+						    Dragon 2<br/>
+						    <label for="dragon2color">Color: <input type="color" name="dragon2color" value="#800080"></label>
+						    <label for="dragon2degree">Size: <input type="number" name="dragon2degree" min="2" max="16" value="12"></label><br/>
+						    Dragon 3<br/>
+						    <label for="dragon3color">Color: <input type="color" name="dragon3color" value="#008080"></label>
+						    <label for="dragon3degree">Size: <input type="number" name="dragon3degree" min="2" max="16" value="12"></label><br/>
+						    Dragon 4<br/>
+						    <label for="dragon4color">Color: <input type="color" name="dragon4color" value="#FF00FF"></label>
+						    <label for="dragon4degree">Size: <input type="number" name="dragon4degree" min="2" max="16" value="12"></label><br/>
+						    <label for="timeout">Speed (ms):</label>
+						    <input type="range" name="timeout" min="0" value="50">
+						  </form>
+						  <p class="center">(see the <a href="https://github.com/dcr8898/dragon" target="_blank">source code</a>)</p>
+						</div>
+
+						<!-- Caption -->
+						<div class="caption sft stl rev-title big hidden-sm hidden-xs" data-x="775" data-y="50" data-speed="1000" data-start="700" data-easing="easeOutExpo">
+							Fun with Fractals
+						</div>
+
+					</li>
+					<!-- END SLIDE 2 -->
+
+				</ul>
+				<div class="tp-bannertimer tp-bottom"></div>
+			</div>
+		</div>
+		<!-- // END REVOLUTION SLIDER -->
+
+		<!--banner-->
+		<div id="banner">
+			<div class="container intro_wrapper">
+				<div class="inner_content">
+
+					<!--welcome-->
+					<div class="welcome_index">
+						I'm <span class="hue">Damian</span>, a budding software engineer.<br/><span>Let's build something together!</span>
+					</div>
+					<!--//welcome-->
+
+				</div>
+			</div>
+		</div>
+		<!--//banner-->
+
+		<!--projects-->
+		<div id="projects" class="container wrapper">
+			<div class="inner_content">
+				<div class="welcome_index">
+					<span>Projects</span>
+				</div>
+				<!--info boxes-->
+				<div class="row is-table-row">
+					<div class="col-sm-6 col-md-4">
+						<div class="tile">
+							<div class="intro-icon-disc cont-large"><i class="fa fa-calendar-o fa-flip-vertical intro-icon-large"></i></div>
+							<h6>
+								<span>There's A Board<br/><a class="btn btn-primary" href="http://theresaboard.com">live</a> <a class="btn btn-primary" href="https://github.com/theresaboard">code</a></span>
+							</h6>
+							<p>
+								An open source mentorship app initially designed around the simple idea of matching students with student-tutors based on availability and study topic, There's A Board evolved into a powerful support platform allowing students, alumns, and employee-mentors to connect for studying, tutoring, and skill development. There's A Board was forked by Dev Bootcamp NYC to be used as their tool for managing both paid and volunteer mentors.
+							</p>
+						</div>
+						<div class="pad25"></div>
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+						<div class="tile">
+							<div class="intro-icon-disc cont-large"><i class="fa fa-tasks intro-icon-large"></i></div>
+							<h6>
+								<span>Turtle Overflow<br/><a class="btn btn-primary" href="https://turtle-overflow.herokuapp.com/">live</a> <a class="btn btn-primary" href="https://github.com/dcr8898/turtle-overflow">code</a></span>
+							</h6>
+							<p>
+								A clone of the popular Stack Overflow site. Turtle-overflow was built as an exercise to explore Ruby on Rails, ActiveRecord, and Agile development practices.
+							</p>
+						</div>
+						<div class="pad25"></div>
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+						<div class="tile">
+							<div class="intro-icon-disc cont-large"><i class="fa fa-pie-chart intro-icon-large"></i></div>
+							<h6>
+								<span>Survey Gorilla<br/><a class="btn btn-primary" href="https://survey-gorilla.herokuapp.com/">live</a> <a class="btn btn-primary" href="https://github.com/dcr8898/survey-gorilla">code</a></span>
+							</h6>
+							<p>
+								An end-to-end survey creation and poll-taking app, complete with statistical analysis and visual charts of survey results. Survey Gorilla was built primarily with Sinatra, jQuery, ActiveRecord, and Highcharts using agile development practices.
+							</p>
+						</div>
+						<div class="pad25"></div>
+					</div>
+				</div>
+
+				<div class="row is-table-row">
+					<div class="col-sm-6 col-md-4">
+						<div class="tile">
+							<div class="intro-icon-disc cont-large"><i class="fa fa-bullhorn intro-icon-large"></i></div>
+							<h6>
+								<span>clíque<br/><a class="btn btn-primary" href="https://myclique.herokuapp.com/">live</a> <a class="btn btn-primary" href="https://github.com/dcr8898/clique">code</a></span>
+							</h6>
+							<p>
+								My implementation of the venerable Rails Tutorial by Michael Hartl. Clíque is a real, industrial-strength application built on Ruby on Rails, exploring all of the framework's features, with full unit testing.
+							</p>
+						</div>
+						<div class="pad25"></div>
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+						<div class="tile">
+							<div class="intro-icon-disc cont-large"><i class="fa fa-arrow-circle-right intro-icon-large"></i></div>
+							<h6>
+								<span>Flash Forward<br/><a class="btn btn-primary" href="https://github.com/dcr8898/Flash-Forward">code</a></span>
+							</h6>
+							<p>
+								A web-based flash card application that allows users to either choose an existing deck or create their own interactively.  Flash-forward also allows users to return to incomplete games and provides statistical results for all games played.  Flash-forward was built with Sinatra, ActiveRecord, and PostgreSQL, using agile development practices.
+							</p>
+						</div>
+						<div class="pad25"></div>
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+						<div class="tile">
+							<div class="intro-icon-disc cont-large"><i class="fa fa-th intro-icon-large"></i></div>
+							<h6>
+								<span>2048<br/><a class="btn btn-primary" href="http://rossney.net/2048">live</a> <a class="btn btn-primary" href="https://github.com/dcr8898/dcr2048">code</a></span>
+							</h6>
+							<p>
+								A clone of the fabulous 2048 game created by Gabriele Cirulli.  dcr2048 is an exercise in writing JavaScript using the MVC pattern.  I intend to further improve the game with some cool CSS transforms.  Stay tuned . . .
+							</p>
+						</div>
+						<div class="pad25"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!--//projects-->
+
+		<!--about-me-->
+		<div class="container-fluid strip">
+			<div id="about-me" class="container">
+				<div class="inner_content">
+					<div class="welcome_index">
+						<span>About Me</span>
+					</div>
+					<pre class="line-numbers">
+<code class="language-javascript">// file: ~/code/dcr/about.js
+//
+//  USER STORY:
+//         AS A  curious seeker, inveterate learner, and voracious autodidact,
+// I WOULD LIKE  a position that allows me to exercise my skills and creativity
+//  IN ORDER TO  to solve real-world problems with beautiful code.
+
+var Damian_Rossney = (function() {
+
+  var story = "I am a full stack developer with prior training in business,  " +
+              "math, and the legal field. I am an entrepreneur and           " +
+              "technologist at heart. I enjoy solving complex problems,      " +
+              "building practical things, and developing new businesses. I   " +
+              "have developed apps using Ruby, Rails, Sinatra, JavaScript,   " +
+              "SQL, HTML5, and CSS3. I have utilized Test-Driven Development " +
+              "and follow Agile methodologies. I continuously work to expand " +
+              "my skill set and learn new technologies.";
+
+  var skills = {
+
+    languages:              [ Ruby, JavaScript                             ],
+
+    frameworks:             [ Rails, Sinatra, jQuery, Handlebars           ],
+
+    databases:              [ PostgreSQL, MySQL, SQLite, Redis             ],
+
+    front_end:              [ HTML5, CSS3, Bootstrap, Skeleton             ],
+
+    testing:                [ Rspec, Jasmine, Capybara, SimpleCov          ],
+
+    version_control:        [ Git, GitHub, BitBucket                       ],
+
+    continuous_deployment:  [ Heroku                                       ],
+
+    continuous_integration: [ CircleCI                                     ],
+
+    methodologies:          [ Agile, Kanban, TDD, OOD/OOP, MVC, REST, AJAX ]
+
+  };
+
+}) ();</code>
+	 				</pre>
+	 				<p class="center">For a print version of my current resume, please clink the pdf link in the Contact section below.</p>
+				</div>
+			</div>
+		</div>
+		<!--//about-me-->
+
+	<!--//page-->
+
+	<!-- footer -->
+	<div id="footer">
+		<div id="contact" class="welcome_index">
+			<span class ="white">Contact</span>
+		</div>
+		<h3 class="center follow">
+			Want to build something? Have an interesting project or opportunity? Contact me!</h3>
+
+			<div class="follow_us">
+			  <a href='&#116;&#101;&#108;&#58;&#57;&#49;&#52;&#50;&#50;&#55;&#52;&#50;&#48;&#50;' title='&#40;&#57;&#49;&#52;&#41;&#32;&#50;&#50;&#55;&#45;&#52;&#50;&#48;&#50;'><span class='fa fa-2x fa-phone'></span></a>
+			  <a href='&#109;&#097;&#105;&#108;&#116;&#111;:&#100;&#097;&#109;&#105;&#097;&#110;&#064;&#114;&#111;&#115;&#115;&#110;&#101;&#121;&#046;&#110;&#101;&#116;?&#083;&#117;&#098;&#106;&#101;&#099;&#116;=&#079;&#110;&#108;&#105;&#110;&#101;%&#050;&#048;&#082;&#101;&#115;&#117;&#109;&#101;%&#050;&#048;&#067;&#111;&#110;&#116;&#097;&#099;&#116;' title='&#100;&#97;&#109;&#105;&#97;&#110;&#64;&#114;&#111;&#115;&#115;&#110;&#101;&#121;&#46;&#110;&#101;&#116;'><span class='fa fa-2x fa-envelope'></span></a>
+			  <a href='https://github.com/dcr8898' title='GitHub'><span class='fa fa-2x fa-github'></span></a>
+			  <a href='https://linkedin.com/in/damianrossney' title='LinkedIn'><span class='fa fa-2x fa-linkedin-square'></span></a>
+			  <a href='dl/dcr_res.pdf' download='Damian_Rossney_Resume.pdf' title='Download My Resume'><span class='fa fa-2x fa-file-pdf-o'></span></a>
+			</div>
+			<div class="pad90"></div>
+		</div>
+
+		<!-- footer 2 -->
+		<div id="footer2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright">
+							Damian C. Rossney
+							&copy;
+							<script type="text/javascript">
+						//<![CDATA[
+						var d = new Date()
+						document.write(d.getFullYear())
+							//]]>
+						</script>
+						- All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- up to top -->
+	<a href="index.html#"><i class="go-top fa fa-angle-double-up"></i></a>
+	<!--//end-->
+
+	<!-- SCRIPTS -->
+	<script src='js/dragon.js'></script>
+	<script src='js/prism.js'></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- slider settings -->
+	<script type="text/javascript">
+		//<![CDATA[
+		jQuery(document).ready(function() {
+			jQuery('.tp-banner').show().revolution(
+			{
+				delay:12000,
+				startwidth:1170,
+				startheight:600,
+				navigationType:"bullet",
+				navigationStyle:"square",
+				hideBulletsOnMobile:"on",
+				hideArrowsOnMobile: "on",
+				shadow:0,
+				fullWidth:"on",
+			});
+		});
+		//]]>
+	</script>
+
+	<script src="js/jquery.touchSwipe.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script src="js/retina.js"></script>
+	</script>
 </body>
 </html>
