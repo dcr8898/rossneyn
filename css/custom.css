@@ -23,7 +23,11 @@ pre[class*="language-"] {
 
 /* for dragon canvas and controls */
 #canvas {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#dragon_controls {
+  background-color: rgba(50, 58, 69, 0.6);
 }
 
 input[type="number"] {
